@@ -21,11 +21,11 @@ export interface SocialLink {
 
 export const portfolioData = {
   user: {
-    name: "Alex Chen",
-    username: "alexchen",
+    name: "Ivan De Zoysa",
+    username: "ivandezoysa",
     title: "Full-Stack Developer & UI Designer",
     bio: "Passionate about creating beautiful, functional digital experiences. I specialize in React, TypeScript, and modern web technologies. When I'm not coding, you'll find me exploring new design trends or contributing to open-source projects.",
-    email: "hello@alexchen.dev",
+    email: "hello@ivandezoysa.dev",
     phone: "+1 (555) 123-4567",
     location: "San Francisco, CA"
   },
