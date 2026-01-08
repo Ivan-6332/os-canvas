@@ -37,7 +37,7 @@ interface ContextMenuState {
 
 export function WindowsDesktop() {
   const [windows, setWindows] = useState<WindowState[]>([]);
-  const [nextZIndex, setNextZIndex] = useState(1);
+  const [nextZIndex, setNextZIndex] = useState(10);
   const [contextMenu, setContextMenu] = useState<ContextMenuState>({ isOpen: false, x: 0, y: 0 });
 
   const openWindow = (folder: typeof desktopFolders[0]) => {
@@ -117,7 +117,7 @@ export function WindowsDesktop() {
       />
 
       {/* Desktop Icons */}
-      <div className="absolute top-4 left-4 flex flex-col gap-4 z-10">
+      <div className="absolute top-4 left-4 flex flex-col gap-4 z-[5]">
         {desktopFolders.map((folder) => (
           <WindowsDesktopIcon
             key={folder.id}
